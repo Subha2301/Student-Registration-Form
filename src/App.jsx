@@ -32,7 +32,8 @@ function App(){
   return(
     <>
   
-     <main className="h-150 w-110 bg-amber-500">
+    <header className="bg-black h-screen flex justify-center items-center">
+       <main className="h-140 w-110 bg-amber-500">
       <h1 className="flex justify-center  text-2xl font-sans font-bold pt-8 ">Student Registration Form</h1>
     <form onSubmit={handleSubmit(onSubmit)} className="p-4">
       <div className="pt-2">
@@ -99,11 +100,12 @@ function App(){
         }
       </div>
 
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-5">
       <button type="submit" className="w-20 h-7 border-2 bg-amber-50 rounded-full font-bold flex justify-center cursor-pointer ">Submit</button>
     </div>
     </form>
     </main>
+    </header>
 
     </>
   )
